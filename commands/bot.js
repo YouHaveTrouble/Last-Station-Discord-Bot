@@ -1,17 +1,14 @@
 const { Client, RichEmbed } = require('discord.js');
+const config = require('../config.json');
 module.exports = {
 	name: 'bot',
     description: 'Informacje o bocie',
     cooldown: 5,
 	execute(message) {
         		const embed = new RichEmbed()
-      // Set the title of the field
-      .setTitle(`Bot serwera Last Station`)
-      // Set the color of the embed
+      .setTitle(`Bot serwera Last Station ${config.version}`)
       .setColor(0x0099ff)
-      // Set the main content of the embed
-      .setDescription(`Chcesz pomóc? Kod źródłowy znajdziesz na:\nhttps://github.com/YouHaveTrouble/Last-Station-Discord-Bot`);
-    // Send the embed to the same channel as the message
+      .setDescription(`Wersja: ${config.version}\nAutorzy: YouHaveTrouble\n \nPrefix: ${config.prefix}\n \nChcesz pomóc w rozwoju bota i znasz node.js?\n Kod źródłowy znajdziesz na:\nhttps://github.com/YouHaveTrouble/Last-Station-Discord-Bot`);
     message.channel.send(embed);
         console.log(`wykonano komendę "bot"`);
 	},
