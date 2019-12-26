@@ -4,6 +4,6 @@ module.exports = {
     cooldown: 5,
 	execute(message) {
         message.channel.send('Boop.');
-        console.log(`wykonano komendę "beep"`);
+        console.log(`${message.author.username} wykonał komendę "beep"`);
 	},
 };

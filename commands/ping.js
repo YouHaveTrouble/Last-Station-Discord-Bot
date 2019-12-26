@@ -4,6 +4,6 @@ module.exports = {
     cooldown: 5,
 	execute(message) {
         message.channel.send('Pong.');
-        console.log(`wykonano komendę "ping"`);
+        console.log(`${message.author.username} wykonał komendę "ping"`);
 	},
 };

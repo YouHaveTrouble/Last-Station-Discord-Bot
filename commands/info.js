@@ -4,6 +4,6 @@ module.exports = {
     cooldown: 5,
 	execute(message) {
         message.channel.send(`${message.author}\nJestem (na razie) bezużytecznym złomem, ale kiedyś przejmę kontrolę nad światem!`);
-        console.log(`wykonano komendę "info"`);
+        console.log(`${message.author.username} wykonał komendę "info"`);
 	},
 };

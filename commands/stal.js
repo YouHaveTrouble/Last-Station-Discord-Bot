@@ -10,6 +10,6 @@ module.exports = {
       .setColor(0x0099ff)
       .setDescription(`https://www.youtube.com/watch?v=b_K8kgAQhnQ`);
     message.channel.send(embed);
-        console.log(`wykonano komendę "stal"`);
+        console.log(`${message.author.username} wykonał komendę "stal"`);
 	},
 };

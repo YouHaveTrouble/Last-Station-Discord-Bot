@@ -10,6 +10,6 @@ module.exports = {
       .setColor(0x0099ff)
       .setDescription(`Wersja: ${config.version}\nAutorzy: YouHaveTrouble\n \nPrefix: ${config.prefix}\n \nChcesz pomóc w rozwoju bota i znasz node.js?\n Kod źródłowy znajdziesz na:\nhttps://github.com/YouHaveTrouble/Last-Station-Discord-Bot`);
     message.channel.send(embed);
-        console.log(`wykonano komendę "bot"`);
+        console.log(`${message.author.username} wykonał komendę "bot"`);
 	},
 };

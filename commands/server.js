@@ -10,6 +10,6 @@ module.exports = {
       .setColor(0x0099ff)
       .setDescription(`${message.guild.memberCount}`);
     message.channel.send(embed);
-    console.log(`wykonano komendę "server"`);
+    console.log(`${message.author.username} wykonał komendę "server"`);
 	},
 };
